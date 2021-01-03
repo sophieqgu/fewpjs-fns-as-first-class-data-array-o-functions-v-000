@@ -27,6 +27,7 @@ let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog
 
 
 function exerciseDog(dogName, dogBreed) {
+  let message = [];
   for (let exercise in routine) {
     exercise(dogName, dogBreed);
   }
