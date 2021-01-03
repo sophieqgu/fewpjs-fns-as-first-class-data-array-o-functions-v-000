@@ -27,5 +27,7 @@ let routine = [wakeDog(dogName, dogBreed), leashDog(dogName, dogBreed), walkToPa
 
 
 function exerciseDog(dogName, dogBreed) {
-  for ()
+  for (let i in routine) {
+    i(dogName, dogBreed);
+  }
 }
