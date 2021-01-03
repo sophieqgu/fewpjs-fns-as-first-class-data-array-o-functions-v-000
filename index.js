@@ -28,8 +28,8 @@ let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog
 
 function exerciseDog(dogName, dogBreed) {
   let message = [];
-  for (let exercise in routine) {
-    let result = exercise(dogName, dogBreed);
+  for (let i = 0; i < routine.length; i++) {
+    let result = routine[i](dogName, dogBreed);
     message.push(result);
   }
   return message;
