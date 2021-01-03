@@ -7,17 +7,20 @@ function leashDog(dogName, dogBreed) {
 }
 
 function walkToPark(dogName, dogBreed) {
-  console.log(`Walk ${dogName} the ${dogBreed} to Park`);
+  console.log(`Walk to the park with ${dogName} the ${dogBreed}`);
 }
 
 function throwFrisbee(dogName, dogBreed) {
-  console.log(`Walk ${dogName} the ${dogBreed} to Park`);
+  console.log(`Throw the frisbee for ${dogName} the ${dogBreed}`);
 }
 
 function walkHome(dogName, dogBreed) {
-  console.log(`Walk ${dogName} the ${dogBreed} home`);
+  console.log(`Walk home with ${dogName} the ${dogBreed}`);
 }
 
 function unleashDog(dogName, dogBreed) {
   console.log(`Unleash ${dogName} the ${dogBreed}`);
 }
+
+
+let routine = [wakeDog(dogName, dogBreed), leashDog(dogName, dogBreed), walkToPark(dogName, dogBreed), throwFrisbee(dogName, dogBreed), walkHome(dogName, dogBreed), ]
